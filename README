@@ -1,0 +1,12 @@
+María José Astudillo Núñez
+
+Prueba elegida: Problem K Traffic Blights
+El problema se está desarrollando en iPython notebook por un tema visual (pero podría variar repentinamente).
+
+En la carpeta icpc2019data se encuentran archivos de prueba con la extensión ".in".
+
+El problema consiste en calcular la probabilidad de atravesar una calle con los semáforos en verde.
+La velocidad del vehículo "ideal" es de 1 m/s, y en los archivos de prueba se señalan la posición, periodo de luz verde y roja de cada semáforo
+respectivamente por fila.
+Para simplificar el problema se debe normalizar cada periodo, de este modo la acción de cada semáforo se hace independiente del semáforo anterior y así
+se puede calcular cada tramo como independiente, es decir, la probabilidad final será el producto de la probabilidad de pasar en verde por cada tramo.
