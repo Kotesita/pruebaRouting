@@ -10,3 +10,11 @@ La velocidad del vehículo "ideal" es de 1 m/s, y en los archivos de prueba se s
 respectivamente por fila.
 Para simplificar el problema se debe normalizar cada periodo, de este modo la acción de cada semáforo se hace independiente del semáforo anterior y así
 se puede calcular cada tramo como independiente, es decir, la probabilidad final será el producto de la probabilidad de pasar en verde por cada tramo.
+
+Sea la probabilidad de que un auto pase por un semáforo con el mismo color del semáforo anterior (p). El primer semáforo es rojo con probabilidad de (a), entonces, la probabilidad de que el primer semáforo sea verde es (1-a) (ya que hay sólo dos posibilidades).
+
+Se tienen algunas probabilidades. La probabilidad de que la n-ésima luz sea roja es a_n. Se tienen dos casos:
+- La luz anterior es roja: probabilidad a_(n-1) y la probabilidad p es que la n-ésima luz es roja también.
+- La luz anterior es verde: probabilidad 1-a_(n-1) y la probabilidad 1-p de que la n-ésima luz cambie. Entonces:
+
+a_n = pa_(n-1)+(1-p)(1-a_(n-1))
