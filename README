@@ -18,3 +18,5 @@ Se tienen algunas probabilidades. La probabilidad de que la n-ésima luz sea roj
 - La luz anterior es verde: probabilidad 1-a_(n-1) y la probabilidad 1-p de que la n-ésima luz cambie. Entonces:
 
 a_n = pa_(n-1)+(1-p)(1-a_(n-1))
+
+Para poder entender el problema, utilicé documentación provista por el mismo sitio (http://www.csc.kth.se/~austrin/icpc/finals2019solutions.pdf) y el sitio StackExchange (https://math.stackexchange.com/questions/2311018/probabilities-traffic-light-problem?rq=1) del cual obtuve la fórmula matemática que utilicé pero no llegué al mismo resultado por lo que tuve que haber obviado algún parámetro.
